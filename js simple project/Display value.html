@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+   <form>	
+            <label>User Name</label>
+   	    	<input type="text"  placeholder="Enter user Name "    required=" " id="Name" name="">
+            <label>Email-Id</label>
+   	    	<input type="email" placeholder="Enter your Email-id" required=" " id="Email" name="">
+            <label>Phone</label>
+   	    	<input type="Phone" placeholder="Enter your No"       required=" " id="Phone" name="">
+   </form>
+   <button  onclick="myclick()">Save</button>
+   <p id="show1" class="display" ></p>
+   <script >
+         function myclick(){
+   	var Name  =document.getElementById("Name").value;
+   	var Email =document.getElementById("Email").value;
+   	var Phone =document.getElementById("Phone").value;
+
+       let show1 =" Name : " + Name + " \n " + " Email : " + Email + " \n " + " Phone : " + Phone +".";
+        document.getElementById("show1").textContent=show1;
+     }
+   </script>
+</body>
+</html>

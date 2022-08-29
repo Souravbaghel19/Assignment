@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" placeholder="Income" id='input1'>
+  <input type="number" placeholder="Expenses" id='input2'>
+  <input type="button" value="add" onclick="add_data()">
+  <div>
+    <table id="sampletable" border="1">
+    <tr>
+      <th>income</th>
+      <th>Expenses</th>
+      <th>Savings</th>
+    </tr>
+  </table>
+  </div>
+</body>
+<script>
+  // function add_data()
+  // {
+  //   console.log("HELLO");
+  //   var x=document.getElementById('input1').value;
+  // var y=document.getElementById('input2').value;
+  // var total= x-y;
+  // var z=document.getElementById('show').innerHTML=total;
+  // document.getElementById('income').innerHTML=x;
+  // document.getElementById('expenses').innerHTML=y;
+  // }
+  function add_data()
+  {
+    console.log("HELLO");
+    var x=document.getElementById('input1').value;
+    var y=document.getElementById('input2').value;
+    var total= x-y;
+  // var z=document.getElementById('show').innerHTML=total;
+  // document.getElementById('income').innerHTML=x;
+  // document.getElementById('expenses').innerHTML=y;
+    var a=document.getElementById('sampletable').insertRow(0);
+    var b=a.insertCell(0);
+    var c=a.insertCell(1);
+    var d=a.insertCell(2);
+  
+    b.innerHTML=x;
+    c.innerHTML=y;
+    d.innerHTML=total;   
+
+}
+</script>
+</html>
